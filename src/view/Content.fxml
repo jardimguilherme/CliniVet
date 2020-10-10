@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContentController">
+    <children>
+      <AnchorPane maxHeight="40.0" maxWidth="800.0" minHeight="40.0" minWidth="800.0" prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #DDDDDD;" StackPane.alignment="TOP_LEFT">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema CliniVet" wrappingWidth="160.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="text_username" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME_DO_USUARIO" textAlignment="RIGHT" wrappingWidth="400.0" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="727.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="25.0" prefWidth="50.0" text="Sair" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="7.0" />
+         </children>
+      </AnchorPane>
+        <TabPane fx:id="tabpane_tabs" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="tab_clientes" text="Clientes">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_produtos" text="Produtos">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_servicos" text="Servicos">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_agenda_consultas" text="Agenda de Consultas">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_agenda_servicos" text="Agenda de Serviços">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_pedido" text="Pedido">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+                <Tab fx:id="tab_admin" text="Admin">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+            </tabs>
+         <StackPane.margin>
+            <Insets top="40.0" />
+         </StackPane.margin>
+        </TabPane>
+        <Pane fx:id="pane_main_content">
+         <StackPane.margin>
+            <Insets top="70.0" />
+         </StackPane.margin></Pane>
+    </children>
+</StackPane>
